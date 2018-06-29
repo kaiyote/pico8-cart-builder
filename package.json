@@ -1,0 +1,19 @@
+{
+  "name": "pico8-cart-builder",
+  "main": "./lib/pico8-cart-builder",
+  "version": "0.0.0",
+  "description": "Build PICO-8 carts from multiple source files",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "pico8-cart-builder:build",
+    "atom-workspace": "pico8-cart-builder:toggle"
+  },
+  "repository": "https://github.com/atom/pico8-cart-builder",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
