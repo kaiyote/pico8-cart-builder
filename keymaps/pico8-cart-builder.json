@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "pico8-cart-builder:toggle"
+    "ctrl-shift-b": "pico8-cart-builder:build"
   }
 }
