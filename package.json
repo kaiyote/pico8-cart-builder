@@ -1,19 +1,42 @@
 {
   "name": "pico8-cart-builder",
-  "main": "./lib/pico8-cart-builder",
-  "version": "0.0.0",
+  "displayName": "pico8-cart-builder",
   "description": "Build PICO-8 carts from multiple source files",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "pico8-cart-builder:build",
-    "atom-workspace": "pico8-cart-builder:toggle"
-  },
-  "repository": "https://github.com/atom/pico8-cart-builder",
+  "version": "0.0.1",
+  "publisher": "kaiyote",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "vscode": "^1.24.0"
   },
-  "dependencies": {
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pico8.build",
+        "title": "Pico-8: Build Cart"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^7.0.43",
+    "eslint": "^4.11.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6"
   }
 }
